@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="ska.css">
+    <style>
+        body{
+            background-image: url("pc.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            margin-top: 80px;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .signin-form {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            outline: none;
+            box-sizing: border-box; /* Prevents content overflow */
+        }
+        .gender-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .gender-container label {
+            margin-right: 10px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Pradeep Kumar Reddy</div>
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="myresume.html">MyResume</a>
+        <a href="login.html">SignIn</a>
+        <a href="newuser.html">SignUp</a>
+    </div>
+</nav>
+<div class="container">
+    <form class="signin-form">
+        <h2>Sign Up</h2>
+        <input type="text" class="input-field" placeholder="First Name" required>
+        <input type="text" class="input-field" placeholder="Last Name" required>
+        <input type="date" class="input-field" placeholder="Date of Birth" required>
+        <div class="gender-container">
+            <label>Gender:</label>
+            <label><input type="checkbox" name="gender" value="male"> Male</label>
+            <label><input type="checkbox" name="gender" value="female"> Female</label>
+        </div>
+        <input type="text" class="input-field" placeholder="Phone Number" required>
+        <input type="text" class="input-field" placeholder="Father's Name" required>
+        <input type="text" class="input-field" placeholder="Father's Number" required>
+        <input type="text" class="input-field" placeholder="Mother's Name" required>
+        <input type="text" class="input-field" placeholder="Other Number" required>
+        <input type="text" class="input-field" placeholder="College" required>
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>

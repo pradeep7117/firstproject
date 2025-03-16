@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="ska.css">
+    <style>
+        body {
+            background-image: url("pc.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(249, 249, 249, 0.9);
+            border-radius: 12px;
+        }
+        .contact-box {
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .map-container {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 6px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<nav class="pradeep">
+    <div class="navbar">
+        <div class="logo">Pradeep Kumar Reddy</div>
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="myresume.html">MyResume</a></li>
+            <li><a href="newuser.html">SignIn</a></li>
+            <li><a href="newuser.html">SignUp</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="contact-container">
+    <div class="map-container">
+        <iframe
+                src="https://maps.google.com/maps?q=GATES%20Institute%20of%20Technology,%20Gooty&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+        </iframe>
+    </div>
+    <div class="contact-box">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-info">
+            <h3>My Details</h3>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pradeep-kumar-tadipatri/" target="_blank">Pradeep Kumar</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/919398120337" target="_blank">Send Message on WhatsApp</a></p>
+            <p><strong>Email:</strong> <a href="mailto:tadiatripradeepkumar@gmail.com">Send Email</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/pradeep7117" target="_blank">GitHub Profile</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
